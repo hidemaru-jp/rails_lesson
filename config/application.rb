@@ -6,6 +6,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
 module Lesson
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -20,3 +21,4 @@ module Lesson
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
