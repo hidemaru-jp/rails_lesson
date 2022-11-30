@@ -1,4 +1,10 @@
 <div class="container">
+  <div class="alert alert-seccondary text-success mb-0">
+  "ログインしました"
+    <button type="button" class="close" data-dis-miss="alert">
+      ✖️
+    </button>
+  </div>
   <% @memos.each do |memo| %>
     <div class="card">
       <%= memo.title %>
