@@ -10,10 +10,10 @@ class Public::MemosController < ApplicationController
   end
 
   def create
-    @memo = Memo.new(memo_params)
-    @memo.save
+    memo = Memo.new(memo_params)
+    memo.score = Language.get_data(memo_params[:content])  #この行を追加
+    memo.save
     redirect_to request.referrer
-
   end
 
   def destroy
